@@ -1,6 +1,6 @@
 /*
-Author: Maria Cruz
-Date: Current Date
+Author: Mariah Thomas
+Date: 9/7/2024
 File Name: styles.css
 */
 
@@ -26,6 +26,10 @@ img {
 /* Style rule show mobile class and hide tab-desk class */
 .mobile {
     display: block;
+}
+
+.mobile-tablet{
+    
 }
 
 .tab-desk {
@@ -167,6 +171,10 @@ footer a {
     .tab-desk {
         display: block;
     }
+    
+    .desktop{
+        
+    }
 
     .mobile {
         display: none;
@@ -226,6 +234,17 @@ footer a {
     aside {
         grid-column: 1 / span 3;
         font-size: 2em;
+    }
+    
+    /*Style rules for table*/
+    
+    table{
+        border: 1px solid #2a1f14;
+        border-collapse: collapse;
+        margin-top: 0;
+        margin-bottom: 0;
+        border-left: auto;
+        border-right: auto;
     }
     
 }
