@@ -24,15 +24,11 @@ img {
 /* Style rules for mobile viewport */
 
 /* Style rule show mobile class and hide tab-desk class */
-.mobile {
+.mobile, .mobile-tablet {
     display: block;
 }
 
-.mobile-tablet{
-    
-}
-
-.tab-desk {
+.tab-desk, .desktop {
     display: none;
 }
 
@@ -133,7 +129,7 @@ figcaption {
     margin-left: 10%;
 }
 
-#contact {
+#contact, #h2 {
     text-align: center;
 }
 
@@ -148,6 +144,39 @@ figcaption {
     color: #f6eee4;
     text-decoration: none;
     font-weight: bold;
+}
+
+/*Style rules for form elements*/
+fieldset, legend{
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+input{
+    margin-bottom: 2%;   
+}
+
+textarea{
+    margin-bottom: 2%;
+}
+
+label{
+    display: block;
+    padding-top: 2%;
+}
+
+#submit{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 2%;
+    background-color: 78593a;
+    color: f6eee4;
+    font-size: 1.25em;
+    border-radius: 10px;
 }
 
 /* Style rules for footer content */
@@ -170,10 +199,6 @@ footer a {
     /* Tablet Viewport: Show tab-desk class, hide mobile class */
     .tab-desk {
         display: block;
-    }
-    
-    .desktop{
-        
     }
 
     .mobile {
@@ -199,6 +224,13 @@ footer a {
     
     aside {
         grid-column: 1 / span 2;
+    }
+    
+    /*Tablet viewport: Style rule for form element*/
+    selector{
+        width: 70%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     
 }
@@ -264,6 +296,23 @@ footer a {
     tr:nth-child(odd){
         background-color: #deccba;
     }
+    
+        /*Desktop viewport: Style rules for form elements*/
+    form{
+        width: auto;
+    }
+    
+    .form-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;   
+    }
+    
+    .btn{
+        grid-column: 1 / span 2;
+    }
+    
+    
     td{
         border: 1px solid #2a1f14;
         padding: 1%;
